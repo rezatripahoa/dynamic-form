@@ -1,7 +1,6 @@
 import {
   Button,
   Card,
-  CardActions,
   CardContent,
   Container,
   FormControl,
@@ -12,6 +11,12 @@ import {
 } from "@mui/material";
 import { Stack } from "@mui/system";
 import { useState } from "react";
+
+/*Konsepnya :
+1. Disini bukin dulu state default bentuknya array lalu diisi objek untuk menggambarkan seolah-olah itu data pertama untuk menghindari error
+2. Pas di Tambah Row, nambahin array baru ke state arraynya
+3. Buat nampung semua perubahannya, diperluin index array dan nama fieldnya baru bisa di isi valuenya
+*/
 
 function App() {
   const [rowTable, setRowTable] = useState([
